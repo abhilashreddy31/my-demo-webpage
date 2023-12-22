@@ -9,8 +9,8 @@
 }
 .home-page{
     background-color: #f3d1c1;
-    height: 100vh;
-    width: 100%;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,8 +48,8 @@
 
 
 .left-column {
-    width: 50%;
-    height: 100vh;
+ 
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,11 +106,11 @@ margin-top: -6%;
 .explore-btn{
     gap:4px;
     display: flex;
-padding: 10px 20px;
+padding: 15px 5px;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-width:180px;
+width:250px;
 border-radius: 5px;
 background: #FFF;
 color: #3B3A5D;
@@ -124,7 +124,7 @@ line-height: 118.5%; /* 23.7px */
 
 .right-column {
     width: 50%;
-    height: 100vh;
+  
     position: relative;
     display: flex;
     justify-content: flex-end;
