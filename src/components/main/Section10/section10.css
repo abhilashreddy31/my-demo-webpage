@@ -1,0 +1,18 @@
+.section10-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h111{
+    color: #3B3A5D;
+text-align: center;
+font-family: Kufam;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 118.5%; /* 53.325px */
+width: 400px;
+margin-top: -0.5%;
+}

@@ -1,0 +1,161 @@
+.navbar {
+    background-color:white;
+    padding: 10px 0px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 15px;
+}
+.icon-btn{
+    display: flex;
+}
+
+.icon-btn img{
+    height: 45px;
+    width: 45px;
+}
+
+.icon-btn p{
+    color: #3B3A5D;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 6px;
+}
+
+.nav-box{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.link{
+    color: #A4A4A4;
+font-family: Kufam;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 118.5%;
+text-decoration: none;
+margin-right: 25px;
+}
+
+.contact-btn{
+    display: flex;
+padding: 8px 25px;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+background: #3B3A5E;
+color: #FFF;
+text-align: center;
+font-family: Kufam;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 118.5%;
+
+}
+
+
+
+/* For screens up to 700px */
+@media (max-width: 700px) {
+    .icon-btn img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .icon-btn p {
+        font-size: 18px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    .contact-btn {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+  
+}
+
+/* For screens between 701px and 800px */
+@media (min-width: 701px) and (max-width: 800px) {
+    .icon-btn img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .icon-btn p {
+        font-size: 18px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    .contact-btn {
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+ 
+}
+
+/* For screens between 801px and 900px */
+@media (min-width: 801px) and (max-width: 900px) {
+    .icon-btn img {
+        height: 42px;
+        width: 42px;
+    }
+
+    .icon-btn p {
+        font-size: 19px;
+    }
+
+    .link {
+        font-size: 17px;
+    }
+
+    .contact-btn {
+        padding: 8px 25px;
+        font-size: 15px;
+    }
+
+ 
+}
+
+
+
