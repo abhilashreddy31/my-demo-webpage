@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import icon from "../../asserts/Icon.svg"
 import downarrow from "../../asserts/down-arrow.svg"
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
     return (
         <div className="navbar">
             <div className="nav-menu">
@@ -12,7 +18,12 @@ const Navbar = () => {
                     <img src={icon} alt="Icon" />
                     <p>ProperLand</p>
                 </div>
-                <div className='nav-box'>
+                {/* Toggle button */}
+                <button className="toggle-btn" onClick={toggleMenu}>
+                    Toggle Menu
+                </button>
+                {/* Menu items */}
+                <div className={`nav-box ${showMenu ? 'show' : ''}`}>
                     <Link className='link' to="/">Home</Link>
                     <Link className='link' to="/">About</Link>
                     <Link className='link' to="/">Properties</Link>

@@ -1,6 +1,6 @@
-.navbar {
-    background-color:white;
-    padding: 10px 0px;
+.navbar{
+    display: flex;
+    justify-content: center;
 }
 
 .nav-menu {
@@ -9,6 +9,8 @@
     justify-content: space-between;
     height: 45px;
     padding: 0 15px;
+    width: 877px;
+ 
 }
 .icon-btn{
     display: flex;
@@ -90,7 +92,7 @@ line-height: 118.5%;
 
 
 
-/* For screens up to 700px */
+
 @media (max-width: 700px) {
     .icon-btn img {
         height: 35px;
@@ -112,49 +114,40 @@ line-height: 118.5%;
   
 }
 
-/* For screens between 701px and 800px */
-@media (min-width: 701px) and (max-width: 800px) {
-    .icon-btn img {
-        height: 40px;
-        width: 40px;
-    }
 
-    .icon-btn p {
-        font-size: 18px;
-    }
-
-    .link {
-        font-size: 16px;
-    }
-
-    .contact-btn {
-        padding: 8px 22px;
-        font-size: 14px;
-    }
+@media (max-width: 850px) {
+  .nav-menu{
+     width: 400px;
+ 
+  }
  
 }
 
-/* For screens between 801px and 900px */
-@media (min-width: 801px) and (max-width: 900px) {
-    .icon-btn img {
-        height: 42px;
-        width: 42px;
+
+
+.toggle-btn {
+    display: none;
+}
+
+@media (max-width: 1090px) {
+    .toggle-btn {
+        display: block; 
+        
+    }
+    .nav-menu{
+        width: 777px;
     }
 
-    .icon-btn p {
-        font-size: 19px;
+   
+    .nav-box {
+        display: none;
     }
 
-    .link {
-        font-size: 17px;
+   
+    .nav-box.show {
+        display: flex;
+      
     }
-
-    .contact-btn {
-        padding: 8px 25px;
-        font-size: 15px;
-    }
-
- 
 }
 
 
