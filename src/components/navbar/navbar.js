@@ -3,6 +3,7 @@ import './navbar.css';
 import { Link } from 'react-router-dom';
 import icon from "../../asserts/Icon.svg"
 import downarrow from "../../asserts/down-arrow.svg"
+import lines from "../../asserts/lines.png"
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -18,11 +19,9 @@ const Navbar = () => {
                     <img src={icon} alt="Icon" />
                     <p>ProperLand</p>
                 </div>
-                {/* Toggle button */}
                 <button className="toggle-btn" onClick={toggleMenu}>
-                    Toggle Menu
+                    <img width={20} height={20} src={lines}></img>
                 </button>
-                {/* Menu items */}
                 <div className={`nav-box ${showMenu ? 'show' : ''}`}>
                     <Link className='link' to="/">Home</Link>
                     <Link className='link' to="/">About</Link>
